@@ -1,0 +1,44 @@
+*{box-sizing: border-box;}
+
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    background:#1b1c23 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Design */
+.box
+{
+    display: flex;
+}
+.box .eye
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: block;
+    background: #fff;
+    margin: 0 30px;
+    border-radius: 50%;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.2),
+                inset 0 0 15px #4b4b4b,
+                inset 0 0 15px #000000;
+}
+.box .eye::before
+{
+    content: '';
+    position: absolute;
+    top:50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #000;
+    border: 12px solid #ab3900;
+}
